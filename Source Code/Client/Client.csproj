@@ -1,0 +1,171 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEC70E1C-AD7A-4AE5-B33E-B6CA5B87E7EA}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Client</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <StartupObject>Client.frmClient</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RemoteObject">
+      <Name>RemoteObject</Name>
+      <HintPath>..\RemoteObject\bin\Debug\RemoteObject.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEveMesssage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRDesktopViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRTaskManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RemoteDesktopControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClient.resx">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnect.resx">
+      <DependentUpon>frmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEveMesssage.resx">
+      <DependentUpon>frmEveMesssage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvent.resx">
+      <DependentUpon>frmEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRDesktopViewer.resx">
+      <DependentUpon>frmRDesktopViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRServices.resx">
+      <DependentUpon>frmRServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRTaskManager.resx">
+      <DependentUpon>frmRTaskManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteDesktopControl.resx">
+      <DependentUpon>RemoteDesktopControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
